@@ -60,6 +60,6 @@ $(document).ready(function() {
 });
 //a simple function to click next link
 //a timer will call this function, and the rotation will begin :)  
-function rotate() {
-    $('#next').click();
-}
+// function rotate() {
+//     $('#next').click();
+// }

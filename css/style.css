@@ -1,12 +1,13 @@
 #carousel {
-    width:255px;
+    width: 500px;
     height:290px;    
     margin:0 auto;
 }
 #slides {
+    overflow: hidden;
     /* fix ie overflow issue */
     position:relative;
-    width:250px;
+    width:500px;
     height:250px;
     border:1px solid #ccc;
 }
@@ -18,12 +19,12 @@
     list-style:none;
     margin:0;
     padding:0;    
-    width:750px;   
+    width: 1500px;   
     text-align: center;     
 }
 /* width of the item, in this case I put 250x250x gif */
 #slides li {
-    width:250px;
+    width:500px;
     height:250px;    
     float:left;
     color: #fff;
