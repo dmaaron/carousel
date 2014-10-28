@@ -1,3 +1,8 @@
+i {
+    line-height: 40px;
+    color: #000;
+}
+
 #carousel {
     width: 500px;
     height:290px;    
@@ -36,14 +41,21 @@
 #buttons {
     padding:0 0 5px 0;    
     float:right;
+    background-color: #fff;
 }
+
+
 #buttons a {
+    padding: 10px;
+    color: #000;
     display:block; 
     width:31px; 
     height:32px;
     float:left;
     outline:0;
+    text-decoration: none;
 }
+
 a#prev {
     background:url(arrow.gif) 0 -31px no-repeat; 
 }
