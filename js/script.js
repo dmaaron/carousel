@@ -9,13 +9,13 @@ $(document).ready(function() {
 
 
     function set_button_color(){
-        $('#slides li').each(function(i){
-        if($(this).position().left==500){
-        var this_slide = $(this).index();
-        var color_1 = $('#slides li').eq(this_slide-1).css('background-color');
-        var color_3 = $('#slides li').eq(this_slide+1).css('background-color');
-        $('#prev').css({'background-color': color_1});
-        $('#next').css({'background-color': color_3});
+        $('#slides li').each(function(i){ //goes through each slide
+            if($(this).position().left==500){ //finds which one is currently visible based on position
+                var this_slide = $(this).index(); // gets the index of the currently visible slide
+                var prev_color = $('#slides li').eq(this_slide-1).css('background-color'); //sets the previous button to be the background color of the previous slide
+                var next_color = $('#slides li').eq(this_slide+1).css('background-color');//sets the next button to be the background color of the next slide
+            $('#prev').css({'background-color': prev_color});
+            $('#next').css({'background-color': next_color});
             }
         });
     }
